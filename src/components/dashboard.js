@@ -14,7 +14,7 @@ export default function Home() {
 
     // useEffect(() => {
     async function fetchData() {
-        let response = await axios.get(`http://localhost:5000/urls/${params.id}`, {
+        let response = await axios.get(`https://urlshortnerdemo.herokuapp.com/urls/${params.id}`, {
             headers: {
                 Accept: 'application/json',
                 Authorization: window.localStorage.getItem('app_token')
@@ -28,7 +28,7 @@ export default function Home() {
         e.preventDefault()
         try {
             let passdata = { fullUrl: fullUrl }
-            let res = await axios.post(`http://localhost:5000/urls/${params.id}`, passdata, {
+            let res = await axios.post(`https://urlshortnerdemo.herokuapp.com/urls/${params.id}`, passdata, {
                 headers: {
                     Accept: 'application/json',
                     Authorization: window.localStorage.getItem('app_token')
