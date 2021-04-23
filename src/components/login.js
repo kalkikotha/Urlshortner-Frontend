@@ -37,7 +37,7 @@ export default function Login() {
                     let data = {
                         email: email, password: password
                     }
-                    axios.post("http://localhost:5000/register", data).then((response) => {
+                    axios.post("https://urlshortnerdemo.herokuapp.com/register", data).then((response) => {
                         console.log(response);
                     }).catch((err) => {
                         console.log(err)
@@ -67,7 +67,7 @@ export default function Login() {
                         return setemailerror("Enter valid email!")
                     }
                     let data = { email: email, password: password };
-                    axios.post("http://localhost:5000/login", data)
+                    axios.post("https://urlshortnerdemo.herokuapp.com/login", data)
                         .then((response) => {
                             console.log(response)
                             setuserlist(response.data)
