@@ -16,7 +16,7 @@ export default function Login() {
     let [userlist, setuserlist] = useState([])
 
     return (<>
-        <h2>Weekly Coding Challenge #1: Sign in/up Form</h2>
+        <h2>Sign in/up Form</h2>
         <div className={`container ${classname}`} id="container">
             <div className="form-container sign-up-container">
                 <form action="#" onSubmit={async (e) => {
