@@ -69,7 +69,7 @@ export default function Home() {
                 <button type="submit">Shrink</button>
             </form>
 
-            <h2 href="">{shortURL}</h2>
+            <h2 href={fullUrl}>{shortURL}</h2>
 
 
             <table style={{
