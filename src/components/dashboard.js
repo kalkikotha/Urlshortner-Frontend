@@ -102,7 +102,7 @@ export default function Home() {
                                 }}>{data.longUrl} </td>
                                 <td style={{
                                     border: "1px solid black"
-                                }}><a href=`${data.longUrl}`>{data.shortURL}</a></td>
+                                }}><a href={data.longUrl}>{data.shortURL}</a></td>
                             </tr>
 
 
